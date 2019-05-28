@@ -13,6 +13,7 @@
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+            <img id="my-image" src="image.png">
         </a-assets>
 
         <a-marker type='barcode' value='7'>
@@ -20,10 +21,11 @@
         </a-marker>
 
         <a-marker id="animated-marker" type='barcode' value='6'>
-            <a-entity
+            <!-- <a-entity
                 gltf-model="#animated-asset"
                 scale="2">
-            </a-entity>
+            </a-entity> -->
+            <a-image src="#my-image"></a-image>
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
